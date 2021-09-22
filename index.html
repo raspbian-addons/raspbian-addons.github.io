@@ -18,10 +18,10 @@
     <meta name="description" content="APT repository for updated, extra software for Raspberry Pies." />
     <meta property="og:description" content="APT repository for updated, extra software for Raspberry Pies." />
     <link rel="canonical" href="https:///" />
-    <meta property="og:url" content="https://blog.iamsjy.com/raspbian-addons-website/" />
+    <meta property="og:url" content="https://raspbian-addons.github.io/" />
     <meta property="og:site_name" content="Raspbian Addons" />
     <script type="application/ld+json">
-    {"description":"APT repository for updated, extra software for Raspberry Pies.","url":"https://blog.iamsjy.com/raspbian-addons-website/","@type":"WebSite","headline":"APT repository for updated, extra software for Raspberry Pies.","name":"Pi-Ware","@context":"https://schema.org"}</script>
+    {"description":"APT repository for updated, extra software for Raspberry Pies.","url":"https://raspbian-addons.github.io/","@type":"WebSite","headline":"APT repository for updated, extra software for Raspberry Pies.","name":"Pi-Ware","@context":"https://schema.org"}</script>
     <!-- End Jekyll SEO tag -->
   <!-- HTMl view -->
   </head>
@@ -40,7 +40,7 @@
     <section class="page-header">
       <h1 class="project-name">Raspbian Addons</h1>
       <h2 class="project-tagline">An APT repository for packages/software that can't be found in the RPi repositories. Fully supports 32/64bit Debian Based ARM Operating Systems.</h2>
-      <button onclick="window.location.assign('https://github.com/chunky-milk/raspbian-addons')" class="btn">View on GitHub</button>
+      <button onclick="window.location.assign('https://github.com/raspbian-addons/raspbian-addons')" class="btn">View on GitHub</button>
       <span class="center site-footer-owner">Looking for Raspbian Addons's applist?</span>
       <button onclick="window.location.assign('https://osdn.mirror.constant.com/storage/g/r/ra/raspbian-addons/debian/pool/')" class="btn">click here</button>
     </section>
@@ -50,7 +50,7 @@
 <h2 id="guide-to-installing">Installing:</h3>
 <h3 id="installing">To install the repository, make sure you have an Internet connection. Install Python with sudo apt install python3, then run this command:
 </h2>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">wget -q https://cdn.jsdelivr.net/gh/chunky-milk/raspbian-addons@master/repo.py -O repo.py; python3 repo.py; rm repo.py</span>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">wget -q https://github.com/raspbian-addons/raspbian-addons@master/repo.py -O repo.py; python3 repo.py; rm repo.py</span>
 </code></pre></div></div>
   <div class="tooltip">
   <button class="button2" onclick="copyToClipboard('#p1')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip1">Copy to clipboard</span>Copy Code</button>
@@ -58,15 +58,15 @@
   
 <h2 id="uninstalling">Uninstalling:</h2>
 <h3 id="guide-to-uninstalling">To uninstall the repository, execute this command, and when asked, answer 'R'</h3>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">wget -q https://cdn.jsdelivr.net/gh/chunky-milk/raspbian-addons@master/repo.sh -O repo.sh; bash repo.sh; rm repo.sh</span>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">wget -q https://github.com/raspbian-addons/raspbian-addons@master/repo.sh -O repo.sh; bash repo.sh; rm repo.sh</span>
 </code></pre></div></div>
   <div class="tooltip">
   <button class="button2" onclick="copyToClipboard('#p2')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip2">Copy to clipboard</span>Copy Code</button>
 </div>
 
-<p style="display: none;" id="p1">wget -q https://cdn.jsdelivr.net/gh/chunky-milk/raspbian-addons@master/repo.py -O repo.py; python3 repo.py; rm repo.py
+<p style="display: none;" id="p1">wget -q https://cdn.jsdelivr.net/gh/raspbian-addons/raspbian-addons@master/repo.py -O repo.py; python3 repo.py; rm repo.py
 </p>
-<p style="display: none;" id="p2">wget -q https://cdn.jsdelivr.net/gh/chunky-milk/raspbian-addons@master/repo.sh -O repo.sh; bash repo.sh; rm repo.sh
+<p style="display: none;" id="p2">wget -q https://cdn.jsdelivr.net/gh/raspbian-addons/raspbian-addons@master/repo.sh -O repo.sh; bash repo.sh; rm repo.sh
 </p>
 <!-- Script for copy button -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -122,9 +122,9 @@ function outFunc() {
 </script>
 <!--<h2 id="reviews">Reviews</h2>-->
       <footer class="site-footer">
-          <span class="center site-footer-owner"><a href="https://github.com/chunky-milk/raspbian-addons">Raspbian Addons</a> is maintained by chunky-milk and contributors.</span>
+          <span class="center site-footer-owner"><a href="https://github.com/raspbian-addons/raspbian-addons">Raspbian Addons</a> is maintained by [Ryan Fortner](https://github.com/ryanfortner) and contributors.</span>
           <span class="center site-footer-owner">This site is maintained by <a href="https://github.com/hmsjy2017">hmsjy2017</a>.</span>
-	  <span class="center site-footer-owner">© Copyright 2021 chunky-milk All rights reserved.</span>
+	  <span class="center site-footer-owner">© Copyright 2021 Ryan Fortner All rights reserved.</span>
       </footer>
     </section>
   </body>
