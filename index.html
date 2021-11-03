@@ -42,7 +42,7 @@
       <h2 class="project-tagline">An APT repository for packages/software that can't be found in the RPi repositories. Fully supports 32/64bit Debian Based ARM Operating Systems.</h2>
       <button onclick="window.location.assign('https://github.com/raspbian-addons/raspbian-addons')" class="btn">View on GitHub</button>
       <span class="center site-footer-owner">Looking for Raspbian Addons's applist?</span>
-      <button onclick="window.location.assign('https://osdn.mirror.constant.com/storage/g/r/ra/raspbian-addons/debian/pool/')" class="btn">click here</button>
+      <button onclick="window.location.assign('https://osdn.mirror.constant.com/storage/g/r/ra/raspbian-addons/debian/pool/')" class="btn">Click here</button>
     </section>
     <section class="main-content">
       <h1 class="center project-name" id="Raspbian Addons">Raspbian Addons</h1>
@@ -50,23 +50,23 @@
 <h2 id="guide-to-installing">Installing:</h3>
 <h3 id="installing">To install the repository, make sure you have an Internet connection. Install Python with sudo apt install python3, then run this command:
 </h2>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/raspbian-addons@master/repo.py)</span>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/repo.py)</span>
 </code></pre></div></div>
   <div class="tooltip">
   <button class="button2" onclick="copyToClipboard('#p1')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip1">Copy to clipboard</span>Copy Code</button>
 </div>
   
 <h2 id="uninstalling">Uninstalling:</h2>
-<h3 id="guide-to-uninstalling">To uninstall the repository, execute this command, and when asked, answer 'R'</h3>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">bash <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/raspbian-addons@master/repo.sh)</span>
+<h3 id="guide-to-uninstalling">To uninstall the repository, execute this command.</h3>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">bash <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/uninstall.sh)</span>
 </code></pre></div></div>
   <div class="tooltip">
   <button class="button2" onclick="copyToClipboard('#p2')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip2">Copy to clipboard</span>Copy Code</button>
 </div>
 
-<p style="display: none;" id="p1">python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/raspbian-addons@master/repo.py)
+<p style="display: none;" id="p1">python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/repo.py)
 </p>
-<p style="display: none;" id="p2">bash <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/raspbian-addons@master/repo.sh)
+<p style="display: none;" id="p2">bash <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/uninstall.sh)
 </p>
 <!-- Script for copy button -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
