@@ -1,133 +1,58 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <!-- META info -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link rel="icon" type="image/x-icon" href="images/fco2.png">
-    <!-- CSS style -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/loading.css" type="text/css">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <!-- Begin Jekyll SEO tag v2.7.1 -->
-    <title>Raspbian Addons</title>
-    <link rel="shortcut icon" type="image/gif" href="">
-    <meta name="generator" content="Jekyll v3.9.0" />
-    <meta property="og:title" content="Raspbian Addons" />
-    <meta property="og:locale" content="en_US" />
-    <meta name="description" content="APT repository for updated, extra software for Raspberry Pies." />
-    <meta property="og:description" content="APT repository for updated, extra software for Raspberry Pies." />
-    <link rel="canonical" href="https:///" />
-    <meta property="og:url" content="https://raspbian-addons.org/" />
-    <meta property="og:site_name" content="Raspbian Addons" />
-    <script type="application/ld+json">
-    {"description":"APT repository for updated, extra software for Raspberry Pies.","url":"https://raspbian-addons.org/","@type":"WebSite","headline":"APT repository for updated, extra software for Raspberry Pies.","name":"Pi-Ware","@context":"https://schema.org"}</script>
-    <!-- End Jekyll SEO tag -->
-  <!-- HTMl view -->
-  </head>
-  <body>
-    <!-- Loading animation -->
-    <div class="loader">
-        <img src="./images/loading.WEBP" alt="Loading..." />
-    </div>
-    <script>
-    window.addEventListener("load", function () {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden"; // class "loader hidden"
-    });
-    </script>
-    <!-- Main view -->
-    <section class="page-header">
-      <p align="center">
-	      <img src="https://cdn.jsdelivr.net/gh/ryanfortner/ryanfortner@main/preview2.png" alt="Raspbian-Addons logo">
-      </p>
-      <h2 class="project-tagline">An APT repository for packages/software that can't be found in the RPi repositories. Fully supports 32/64bit Debian Based ARM Operating Systems.</h2>
-      <button onclick="window.location.assign('https://github.com/raspbian-addons/raspbian-addons')" class="btn">View on GitHub</button>
-      <span class="center site-footer-owner">Looking for Raspbian Addons's package list?</span>
-      <button onclick="window.location.assign('https://pkglist.raspbian-addons.org')" class="btn">Click here</button>
-    </section>
-    <section class="main-content">
-</code></pre></div></div>
-<h2 id="guide-to-installing">Installing:</h3>
-<h3 id="installing">To install the repository, make sure you have an Internet connection. Install Python with sudo apt install python3, then run this command:
-</h2>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/repo.py)</span>
-</code></pre></div></div>
-  <div class="tooltip">
-  <button class="button2" onclick="copyToClipboard('#p1')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip1">Copy to clipboard</span>Copy Code</button>
-</div>
-  
-<h2 id="uninstalling">Uninstalling:</h2>
-<h3 id="guide-to-uninstalling">To uninstall the repository, execute this command.</h3>
-  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">bash <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/uninstall.sh)</span>
-</code></pre></div></div>
-  <div class="tooltip">
-  <button class="button2" onclick="copyToClipboard('#p2')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip2">Copy to clipboard</span>Copy Code</button>
-</div>
-
-<p style="display: none;" id="p1">python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/repo.py)
-</p>
-<p style="display: none;" id="p2">bash <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/uninstall.sh)
-</p>
-<!-- Script for copy button -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-  var tooltip1 = document.getElementById("CopyTooltip1");
-  var tooltip2 = document.getElementById("CopyTooltip2");
-  var tooltip3 = document.getElementById("CopyTooltip3");
-  tooltip1.innerHTML = "Copied!";
-  tooltip2.innerHTML = "Copied!";
-  tooltip3.innerHTML = "Copied!";
-}
-
-function Copy(id) {
-  if ( id == "1" ) {
-    var copyText1 = document.getElementById("CopyText1");
-    copyText1.select();
-    copyText1.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    var tooltip = document.getElementById("CopyTooltip1");
-    tooltip.innerHTML = "Copied!";
-    alert("Copied the text: " + copyText.value);
-  } else if (id == "2") {
-    var copyText2 = document.getElementById("CopyText2");
-    copyText2.select();
-    copyText2.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    var tooltip = document.getElementById("CopyTooltip2");
-    tooltip.innerHTML = "Copied!";
-  } else if (id == "2") {
-    var copyText3 = document.getElementById("CopyText3");
-    copyText3.select();
-    copyText3.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    var tooltip = document.getElementById("CopyTooltip3");
-    tooltip.innerHTML = "Copied!";
-  }
-}
-
-function outFunc() {
-  var tooltip1 = document.getElementById("CopyTooltip1");
-  var tooltip2 = document.getElementById("CopyTooltip2");
-  var tooltip3 = document.getElementById("CopyTooltip3");
-  tooltip1.innerHTML = "Copy to clipboard";
-  tooltip2.innerHTML = "Copy to clipboard";
-  tooltip3.innerHTML = "Copy to clipboard";
-}
-</script>
-<!--<h2 id="reviews">Reviews</h2>-->
-      <footer class="site-footer">
-          <span class="center site-footer-owner"><a href="https://github.com/raspbian-addons/raspbian-addons">Raspbian Addons</a> is maintained by <a href="https://github.com/ryanfortner">Ryan Fortner</a> and contributors.</span>
-          <span class="center site-footer-owner">This site is maintained by <a href="https://github.com/hmsjy2017">hmsjy2017</a>, original site made by <a href="https://github.com/oxmc">oxmc</a>.</span>
-	  <span class="center site-footer-owner">© Copyright 2021 Raspbian Addons, All rights reserved.</span>
-      </footer>
-    </section>
-  </body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Remarkable - The Best Markdown Editor for Linux and Windows!</title>
+        <meta name="description" content='Remarkable is the best fully featured markdown editor for Linux and Windows'>
+        <meta name="keywords" content="Markdown, Editor, Linux, Windows, Live Preview, PDF, Free, Export, Scrolling, MathJax, Syntax, Highlighting">
+        <link rel="icon" type="image/png" href="images/remarkable.png">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./stylesheets/pure-min.css">
+        <link rel="stylesheet" href="./stylesheets/grids-responsive-min.css">
+        <link rel="stylesheet" href="./stylesheets/extra.min.css">
+        <link rel="stylesheet" href="./stylesheets/main.min.css">
+        <script>
+        (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-52672478-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body class="landing">
+        <div class="header">
+            <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
+                <a class="pure-menu-heading" href="#">Remarkable</a>
+                <ul>
+                    <li><a href="linux.html">Linux</a></li>
+                    <li><a href="windows.html">Windows</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="splash-container">
+            <div class="splash">
+                <h1 class="splash-head">Remarkable</h1>
+                <p class="splash-subhead">The best markdown editor for Linux and Windows</p>
+                <p>
+                <a href="linux.html" class="pure-button pure-button-primary">
+                    <i class="fa fa-linux"></i> Linux
+                </a>
+                <a href="windows.html" class="pure-button pure-button-primary">
+                    <i class="fa fa-windows"></i> Windows
+                </a>
+                </p>
+            </div>
+        </div>
+    </body>
 </html>
