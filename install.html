@@ -28,20 +28,21 @@
 	</div>
 	<br></br>
 	<br></br>
-	<h2 id="guide-to-installing">Installing:</h3>
-		<h3 id="installing">To install the repository, make sure you have an Internet connection. Install Python with sudo apt install python3, then run this command:
+	<div class="is-center">
+		<h2 id="guide-to-installing">Installing:</h3>
+		<h3 id="installing">To install the repository, make sure you have an Internet connection and then run the following command in a terminal:
 		</h2>
 		  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/repo.py)</span>
 		</code></pre></div></div>
 		  <div class="tooltip">
-		  <button class="button2" onclick="copyToClipboard('#p1')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip1">Copy to clipboard</span></button>
+		  <button class="clipboard_btn" onclick="copyToClipboard('#p1')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip1">Copy to clipboard</span></>
 		</div>
 		<h2 id="uninstalling">Uninstalling:</h2>
-		<h3 id="guide-to-uninstalling">To uninstall the repository, execute this command.</h3>
+		<h3 id="guide-to-uninstalling">To uninstall the repository, execute this command. It will not uninstall any programs installed through the repository.</h3>
 		  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">bash <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/uninstall.sh)</span>
 		</code></pre></div></div>
 		  <div class="tooltip">
-		  <button class="button2" onclick="copyToClipboard('#p2')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip2">Copy to clipboard</span></button>
+		  <button class="clipboard_btn" onclick="copyToClipboard('#p2')" onmouseout="outFunc()"><span class="tooltiptext" id="CopyTooltip2">Copy to clipboard</span></button>
 		</div>
 		
 		<p style="display: none;" id="p1">python3 <(curl -fSsL https://cdn.jsdelivr.net/gh/raspbian-addons/scripts@master/utils/repo.py)
@@ -100,6 +101,7 @@
 		  tooltip3.innerHTML = "Copy to clipboard";
 		}
 		</script>
+	</div>
 	<div class="footer l-box is-center">
 		<a class="my_link_ribbon" href="https://github.com/ryanfortner">Ryan Fortner</a> <script>document.write(new Date().getFullYear())</script> | <a class="my_link_ribbon" href="../license.txt" target="_blank">License</a> | <a class="my_link_ribbon" href="https://github.com/raspbian-addons/raspbian-addons" target="_blank">GitHub</a>
 	</div>
