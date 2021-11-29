@@ -1,45 +1,92 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Raspbian Addons</title>
-        <meta name="description" content='Raspbian Addons is an extra APT repository for Raspberry Pies.'>
-        <meta name="keywords" content="Debian, Raspbian, Raspberry, RaspberryPi, Pi, Packages, APT, Bullseye, Buster">
-        <link rel="icon" type="image/png" href="images/favicon.png">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./stylesheets/pure-min.css">
-        <link rel="stylesheet" href="./stylesheets/grids-responsive-min.css">
-        <link rel="stylesheet" href="./stylesheets/extra.min.css">
-        <link rel="stylesheet" href="./stylesheets/main.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    </head>
-    <body class="landing">
-        <div class="header">
-            <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-                <a class="pure-menu-heading" href="#">Raspbian Addons</a>
-                <ul>
-                    <li><a href="install.html">Install</a></li>
-                    <li><a href="https://docs.raspbian-addons.org">Docs</a></li>
-                    <li><a href="https://docs.raspbian-addons.org/package-list">Packages</a></li>
-                </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link rel="icon" type="image/png" href="https://github.com/raspbian-addons/raspbian-addons/blob/master/icons/logo-condensed-test.png?raw=true">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <title>Raspbian Addons</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-transparent">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+    </button>
+    <img src="https://github.com/raspbian-addons/raspbian-addons/blob/master/icons/logo-condensed-test.png?raw=true" width="50" height="50">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://docs.raspbian-addons.org/package-list/">Package List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://docs.raspbian-addons.org/">Docs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://docs.raspbian-addons.org/install/">Install</a>
+            </li>
+            <li>
+                <a class="nav-link" href="https://docs.raspbian-addons.org/about/what-is-it/">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="heading">
+    <h1 class="display-5 title">Raspbian Addons</h1>
+    <p class="subtitle">Legendary extra APT repository for Raspberry Pies, containing open-source ARM software.<br />Supports both 32 and 64 bit Debian-based operating systems.</p>
+    <a class="btn btn-primary btn-lg" href="https://docs.raspbian-addons.org/install/" target="_blank" role="button">Get started</a>
+    <a class="btn btn-secondary btn-lg" href="https://docs.raspbian-addons.org/package-list/" target="_blank" role="button">View packages</a>
+    <br /><br /><br /><br />
+</div>
+<div class="statistics">
+    <div class="cards">
+        <div class="card statistic" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">359+</h1>
+                <p style="font-weight: bold !important;font-size: 20px !important;">packages</p>
             </div>
         </div>
-        <div class="splash-container">
-            <div class="splash">
-                <p align="center">
-                    <img src="https://cdn.jsdelivr.net/gh/raspbian-addons/raspbian-addons@master/icons/logo-square.png" alt="Raspbian-Addons logo">
-                </p>
-                <p class="splash-subhead">APT Repository for Updated Open-Source Software</p>
-                <p>
-                <a href="install.html" class="pure-button pure-button-primary">
-                    <i class="fa fa-download"></i> Install
-                </a>
-                <a href="https://github.com/raspbian-addons/raspbian-addons" class="pure-button pure-button-primary">
-                    <i class="fa fa-github"></i> GitHub
-                </a>
-                </p>
+        <div class="card statistic" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">50+</h1>
+                <p style="font-weight: bold !important;font-size: 20px !important;">users</p>
             </div>
         </div>
-    </body>
+        <div class="card statistic" style="width: 18rem;">
+            <div class="card-body">
+                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">23</h1>
+                <p style="font-weight: bold !important;font-size: 20px !important;">mirrors</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page_end">
+    <div class="start">
+        <div class="card">
+            <div class="card-body gs-card">
+                <div class="title">Ready to install Raspbian Addons?</div>
+                <br />
+                <a class="btn btn-primary btn-lg" href="https://docs.raspbian-addons.org/install/" role="button">Get started</a>
+            </div><br />
+        </div>
+    </div>
+    <div class="footer">
+        <div class="bot-footer">
+            Copyright © Raspbian Addons - 2021
+        </div><br/>
+        <div class="nouridio">website designed by <a href="https://nouridio.com"> nouridio</a></div>
+    </di
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/now-ui-kit.min.js"></script>
+</body>
 </html>
