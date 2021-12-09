@@ -56,7 +56,7 @@ body {
 .heading {
     padding: 160px 50px !important;
     color: #fff !important;
-    background-image: url("../assets/wavy-purple-by-nouridio.svg") !important;
+    background-image: url("../img/wavy-purple-by-nouridio.svg") !important;
     background-position: bottom !important;
     background-size: 300% !important;
     background-repeat: no-repeat !important;
@@ -79,7 +79,7 @@ body {
     text-align: center !important;
     background: #AD91FF !important;
     padding: 60px 50px !important;
-    background-image: url("../assets/wavy-dark-by-nouridio.svg") !important;
+    background-image: url("../assets/img/wavy-dark-by-nouridio.svg") !important;
     background-position: bottom !important;
     background-size: 200% !important;
     background-repeat: no-repeat !important;
@@ -149,7 +149,7 @@ body {
 
 
 .page_end {
-    background-image: url("../assets/wavy-light-by-nouridio.svg") !important;
+    background-image: url("../img/wavy-light-by-nouridio.svg") !important;
     background-position: bottom !important;
     background-size: 200% !important;
     background-repeat: no-repeat !important;
